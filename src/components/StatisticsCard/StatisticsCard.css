@@ -1,0 +1,35 @@
+.statistics_card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 250px;
+    min-height: 100px;
+}
+
+.statistics_card__title {
+    font-weight: 800;
+}
+.statistics_card__value {
+    margin: 0;
+}
+
+.statistics_card__details {
+    display: flex;
+    gap: 12px;
+     align-items: baseline;
+}
+
+.statistics_card__percentage {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 800;
+}
+
+.statistics_card__percentage[data-variation="up"] {
+    color: green;
+}
+
+.statistics_card__percentage[data-variation="down"] {
+    color: rgb(186, 0, 0);
+}

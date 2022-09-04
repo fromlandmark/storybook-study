@@ -1,0 +1,57 @@
+.transaction_item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: transparent;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+     justify-content: space-between;
+    gap: 12px;
+}
+
+.transaction_item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(114, 114, 114, 0.24) , transparent)
+}
+
+.transaction_item__thumbnail {
+    background: #fafafa;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(114, 114, 114, 0.34);
+}
+
+.transaction__item__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 8px;
+}
+
+.transaction_item__description, .transaction_item__date {
+    margin: 0;
+    padding: 0
+}
+
+.transaction_item__description {
+    font-weight: 600;
+}
+
+.transaction_item__date {
+    font-size: 0.9rem;
+    opacity: .5;
+}
+.transaction__amount {
+    font-size: 1.2rem;
+}

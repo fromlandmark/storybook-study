@@ -1,0 +1,87 @@
+.credit_card {
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 16/9;
+    color: #fafafa;
+    border-radius: clamp(8px, calc(1vw / 10), 12px);
+    padding: 12px 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.credit_card__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.credit_card__top, .credit_card__bottom {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.credit_card__top {
+    justify-content: flex-end;
+    height: 30%;
+}
+
+.credit_card__top svg {
+    transform: scale(100%);
+    transform-origin: right;
+}
+
+.credit_card__center {
+    flex-grow: 1;
+}
+
+.credit_card__amount {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.credit_card__amount__label {
+    font-size:100%;
+}
+
+.credit_card__amount__number {
+    font-size: 100%;
+}
+
+
+.credit_card__bottom {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.credit_card__holder {
+    font-size: 100%;
+}
+.credit_card__bottom svg {
+    transform: scale(400%);
+    transform-origin: right;
+}
+
+.credit_card__colors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+  
+
+.credit_card__flatcolor, .credit_card__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

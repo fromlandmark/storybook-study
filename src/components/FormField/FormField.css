@@ -1,0 +1,9 @@
+.form_field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form_field__label {
+    font-size: 0.9rem;
+}

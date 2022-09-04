@@ -1,0 +1,20 @@
+.module {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(179, 180, 179, 0.34);
+    background: white;
+    min-height: 8px;
+    border-radius: 4px;
+}
+
+.module__header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.module__body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
